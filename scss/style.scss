@@ -444,3 +444,60 @@ body {
   left: 30px;
   right: auto;
 }
+.strateg__pretitle {
+  padding-top: 9px;
+  padding-bottom: 55px;
+  color: #544837;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.slide {
+  max-width: 348px;
+  margin-right: 40px;
+}
+.slide__img {
+  margin-bottom: 25px;
+  border-radius: 8px 8px 0 0;
+  width: 348px;
+  height: 185px;
+  object-fit: cover;
+}
+.slide__text span {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.slide__title {
+  color: #2f281e;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+  padding-bottom: 39px;
+  margin-bottom: 45px;
+  max-width: 294px;
+}
+.slide__title:hover {
+  color: #f90;
+}
+.slick-dots {
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+}
+.slick-dots button {
+  font-size: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 20px;
+  border: none;
+  background-color: #efefef;
+}
+.slick-active button {
+  background-color: #f90;
+}
+.strateg {
+  margin-bottom: 120px;
+}
