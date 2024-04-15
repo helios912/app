@@ -207,6 +207,8 @@ body {
 }
 .tools {
   position: relative;
+  padding-bottom: 90px;
+  margin-bottom: 120px;
 }
 .tools::after {
   content: "";
@@ -215,9 +217,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  top: 20px;
+  bottom: 0;
   min-height: 389px;
   min-width: 100%;
+  z-index: -1;
 }
 .title {
   color: #2f281e;
@@ -238,6 +241,7 @@ body {
   justify-content: space-around;
   align-items: center;
   column-gap: 45px;
+  margin-bottom: 60px;
 }
 .tool__item {
   width: 240px;
@@ -245,14 +249,198 @@ body {
 .svg-watch-arrow-dims {
   width: 20px;
 }
-.svg-wesign-arrow-dims {
+.svg-wesign-arrow-dims,
+.svg-wesign-arrow2-dims,
+.svg-wesign-arrow3-dims,
+.svg-wesign-arrow4-dims {
   height: 18px;
-  background-color: $fiolet-icon;
 }
 
 .svg {
   padding: 17px 19px 15px;
   border-radius: 19px;
-  background-color: $fiolet-icon;
   display: inline-block;
+  margin-bottom: 30px;
+}
+.tool__title {
+  color: #2f281e;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 13px;
+}
+.tool__text {
+  color: #544837;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.tool__button {
+  padding: 15px 34px;
+  background-color: $gold-buton;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  max-width: 175px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.design__pro {
+  margin-bottom: 22px;
+}
+.design__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+  margin-bottom: 100px;
+}
+.design__contant {
+  max-width: 486px;
+}
+.design__text {
+  margin-bottom: 30px;
+}
+.design__title {
+  color: #2f281e;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.product {
+  margin-bottom: 100px;
+}
+.marketers {
+  margin-bottom: 150px;
+}
+.product__wrapper {
+  display: flex;
+  column-gap: 30px;
+  align-items: start;
+}
+.product__wrapper svg {
+  width: 35px;
+  height: 35px;
+  margin-top: 5px;
+}
+.team {
+  background-image: url(../images/need-fon.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  min-height: 835px;
+  margin-bottom: 30px;
+}
+.team__item-img {
+  border-radius: 50px;
+  width: 98px;
+  height: 98px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.team__inner {
+  padding: 230px 0 380px;
+  position: relative;
+}
+.team__box {
+  text-align: center;
+  max-width: 542px;
+  margin: 0 auto;
+}
+.team__title {
+  margin-bottom: 22px;
+}
+.team__text {
+  color: #567592;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6; /* 162.5% */
+  margin-bottom: 45px;
+}
+.team__button {
+  padding: 15px 30px;
+  background-color: $gold-buton;
+  border-radius: 4px;
+}
+.team__item-text {
+  background-color: #fff;
+  padding: 14px 20px 15px;
+  color: #2f281e;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.1;
+  border-radius: 50px;
+  border-radius: 26.5px;
+  box-shadow: 0px 2px 15px 0px rgba(23, 58, 86, 0.1);
+  position: absolute;
+  width: 281px;
+  top: -30px;
+  right: 75px;
+  white-space: nowrap;
+}
+.team__item {
+  position: absolute;
+  width: 98px;
+  height: 98px;
+}
+.team__item--1 {
+  right: 95px;
+  top: 157px;
+}
+.team__item--3 {
+  left: 210px;
+  bottom: 223px;
+}
+.team__item--4 {
+  right: 300px;
+  bottom: 135px;
+}
+.team__item--5 {
+  right: 0px;
+  bottom: 257px;
+}
+.team__item--2 {
+  left: 0;
+  top: 223px;
+}
+.team__item-text.team__item-text--left {
+  top: -41px;
+  right: auto;
+  left: 62px;
+}
+
+.team__item-text--right::before,
+.team__item-text--right::after,
+.team__item-text--left::before,
+.team__item-text--left::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.team__item-text--right::after,
+.team__item-text--left::after {
+  width: 17px;
+  height: 17px;
+  bottom: -8px;
+  right: 30px;
+}
+.team__item-text--right::before,
+.team__item-text--left::before {
+  width: 9px;
+  height: 9px;
+  bottom: -20px;
+  right: 9px;
+}
+
+.team__item-text--left::before {
+  left: 9px;
+  right: auto;
+}
+.team__item-text--left::after {
+  left: 30px;
+  right: auto;
 }
