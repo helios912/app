@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".slider_wrapper").slick({
+  $(".slider__wrapper").slick({
     dots: true,
     arrows: false,
     infinite: true,
@@ -34,6 +34,9 @@ $(document).ready(function () {
       // settings: "unslick"
       // instead of a settings object
     ],
+  });
+  $(".menu__btn").on("click", function () {
+    $(".links__items").toggleClass("links__items--active");
   });
 });
 
